@@ -44,7 +44,7 @@ function Registration() {
       alignItems: 'center',
       justifyContent: 'center',
       minHeight: '100vh',
-      backgroundImage: `url('/brown-concrete-textured-wall.jpg')`,
+      backgroundImage: `url('/bgimage.png')`,
       backgroundSize: 'cover',
       backgroundPosition: 'center',
     },
@@ -61,7 +61,7 @@ function Registration() {
       width: '80px',
       height: '80px',
       borderRadius: '50%',
-      marginBottom: '1rem',
+      marginBottom: '10px',
     },
     registerTitle: {
       fontSize: '2rem',

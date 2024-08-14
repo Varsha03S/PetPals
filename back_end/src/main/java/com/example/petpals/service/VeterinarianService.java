@@ -12,13 +12,8 @@ import com.example.petpals.repository.VeterinarianRepo;
 public class VeterinarianService {
 	 @Autowired
 	    private VeterinarianRepo veterinarianrepo;
-
-	 public List<Veterinarian> findVeterinariansByLocationAndService(String location, String service) {
+	 
+	  public List<Veterinarian> findVeterinariansByLocationAndService(String location, String service) {
 	        return veterinarianrepo.findByLocationAndService(location, service);
 	    }
-
-	public List<Veterinarian> getAvailableVeterinarians(String location, String service) {
-		// TODO Auto-generated method stub
-		return null;
-	}
 }

@@ -7,6 +7,9 @@ const AboutUs = () => {
      backgroundColor: '#e0f7fa',
       backgroundSize: 'cover',
       backgroundPosition: 'center',
+      backgroundImage: `url('/bgimage.png')`,
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
    
     },
     cardContainer: {
@@ -56,6 +59,8 @@ const AboutUs = () => {
 
   return (
     <div style={styles.page}>
+                <h1 className="page-title" style={{ textAlign: 'center', fontSize: '2.5rem', marginTop: '100px', color: 'grey' }}>About Us</h1>
+
       <div style={styles.cardContainer}>
         <div style={styles.card}>
           <h2 style={styles.cardTitle}>Our Story</h2>

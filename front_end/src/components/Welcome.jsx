@@ -18,7 +18,7 @@ const Welcome = () => {
       display: 'flex',
       alignItems: 'center',
       justifyContent: 'center',
-      backgroundImage: `url('/brown-concrete-textured-wall.jpg')`, // Adjusted path for public folder
+      backgroundImage: `url('/bg1.png')`, // Adjusted path for public folder
       backgroundSize: 'cover',
       backgroundPosition: 'center',
       overflow: 'hidden',
@@ -54,7 +54,7 @@ const Welcome = () => {
     },
     topButton: {
       backgroundColor: 'transparent',
-      color: '#fff',
+      color: 'grey',
       fontSize: 'medium',
       fontWeight: 'bold',
       padding: '10px 20px',
@@ -67,7 +67,7 @@ const Welcome = () => {
       marginTop: '20px',
       backgroundColor: 'transparent',
       border: '2px solid #fff',
-      color: '#fff',
+      color: 'grey',
       padding: '10px 20px',
       borderRadius: '5px',
       transition: 'background-color 0.3s ease, color 0.3s ease',
@@ -111,10 +111,10 @@ const Welcome = () => {
         </Box>
         
         <Box style={styles.welcomeSection}>
-          <Typography variant="h2" color="bisque" fontFamily="'Trebuchet MS', sans-serif" style={styles.welcomeMessage}>
+          <Typography variant="h2" color="black" fontFamily="'Trebuchet MS', sans-serif" style={styles.welcomeMessage}>
             Welcome to PetPals!
           </Typography>
-          <Typography variant="h5" color="bisque" fontFamily="'Trebuchet MS', sans-serif" style={styles.welcomeSubmessage}>
+          <Typography variant="h5" color="black" fontFamily="'Trebuchet MS', sans-serif" style={styles.welcomeSubmessage}>
             Your trusted companion for pet adoption and clinical services.
           </Typography>
           

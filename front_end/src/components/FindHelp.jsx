@@ -39,6 +39,9 @@ const FindHelp = () => {
     backgroundColor: '#e0f7fa', // Light blue background for a calming effect
     textAlign: 'center',
     minHeight: '100vh', // Ensure the section takes full viewport height
+    backgroundImage: `url('/bgimage.png')`,
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
   };
   const contentContainerStyle = {
     display: 'flex',
@@ -129,11 +132,11 @@ const FindHelp = () => {
     <div style={containerStyle}>
       <div style={contentContainerStyle}>
         <h2 style={headingStyle}>Find Help</h2>
-        <img 
+        {/* <img 
           src="https://thumbs.dreamstime.com/b/concept-animal-shelter-stray-pets-kind-woman-help-homeless-animals-girl-adopting-dog-illustration-cages-cartoon-176040211.jpg" 
           alt="Help Stray Dogs" 
           style={imageStyle} 
-        />
+        /> */}
         <p style={paragraphStyle}>
           If you need help or advice regarding stray dogs in your area, please fill out the form below. Our community is here to assist you.
         </p>

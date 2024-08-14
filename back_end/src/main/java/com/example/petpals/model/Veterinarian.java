@@ -14,7 +14,7 @@ public class Veterinarian {
 	    private Long id;
 
 	    private String name;
-	    private String specialty;
+	    
 	    private String availability;
 	    private String location;
 	    private String service;
@@ -30,12 +30,7 @@ public class Veterinarian {
 		public void setName(String name) {
 			this.name = name;
 		}
-		public String getSpecialty() {
-			return specialty;
-		}
-		public void setSpecialty(String specialty) {
-			this.specialty = specialty;
-		}
+		
 		public String getAvailability() {
 			return availability;
 		}

@@ -42,6 +42,9 @@ const ContactUs = () => {
 
   const pageStyle = {
     padding: '2rem',
+    backgroundImage: `url('/bgimage.png')`,
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
     backgroundColor: '#e0f7fa', // Light blue background for a calming effect
     textAlign: 'center',
     minHeight: '100vh', // Ensure the section takes full viewport height

@@ -6,7 +6,8 @@ const Strayhelper = () => {
     padding: '2rem',
     backgroundColor: '#e0f7fa', // Light blue background for a calming effect
     textAlign: 'center',
-    minHeight: '100vh', // Ensure the section takes full viewport height
+    minHeight: '100vh',
+   
   };
 
   const contentStyle = {

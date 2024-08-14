@@ -16,8 +16,6 @@ import ListAPet from './components/ListAPet.jsx';
 import ClinicalServices from './components/ClinicalServices.jsx';
 import DoctorSelection from './components/DoctorSelection';
 import Appointment from './components/Appointment.jsx';
-import PetList from './components/PetList';
-import PetDetails from './components/PetDetails.jsx';
 import Footer from './components/Footer.jsx';
 import './App.css';
 
@@ -44,10 +42,8 @@ const App = () => {
         <Route path="/listapet" element={<ListAPet />} />
         <Route path="/clinicalservices" element={<ClinicalServices />} />
         <Route path="/DoctorSelection/:service" element={<DoctorSelection />} />
-        <Route path="/appointment/:vetId" element={<Appointment />} />
+        <Route path="/appointment" element={<Appointment />} />
         {/* <Route path="/appointment" element={<Appointment />} />   */}
-        <Route path="/pets/:category" element={<PetList />} />
-        <Route path="/pets/:category/:petId" element={<PetDetails />} />
       </Routes>
       
       {!noNavbarRoutes.includes(location.pathname.toLowerCase()) && <Footer />}

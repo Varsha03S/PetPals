@@ -41,8 +41,8 @@ const ClinicalServices = () => {
               >
                 {serviceItem.img && <img src={serviceItem.img} alt={serviceItem.title} style={{ width: '100%', height: '200px', objectFit: 'cover' }} />}
                 <CardBody style={{ padding: '20px', flex: '1 0 auto', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
-                  <CardTitle tag="h5" style={{ fontSize: '1.5rem', marginBottom: '10px', color: '#333' }}>{serviceItem.title}</CardTitle>
-                  <CardText style={{ fontSize: '1rem', color: '#666', margin: '0' }}>{serviceItem.text}</CardText>
+                  <CardTitle tag="h5" style={{ fontSize: '1.5rem', marginBottom: '1px',marginTop:'1px', color: '#333' }}>{serviceItem.title}</CardTitle>
+                  <CardText style={{ fontSize: '1rem', color: '#666', margin: '0',marginBottom: '1px',marginTop:'1px' }}>{serviceItem.text}</CardText>
                 </CardBody>
               </Card>
             </Link>

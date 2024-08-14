@@ -6,6 +6,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.example.petpals.model.Doctor;
@@ -13,10 +14,12 @@ import com.example.petpals.service.DoctorService;
 
 @RestController
 @CrossOrigin(origins = "http://localhost:3000")
+@RequestMapping("/DoctorSelection")
 public class DoctorController {
 	 @Autowired
 	 private DoctorService doc;
 	 
+	
 	 @GetMapping("/vaccinations")
 	 public List<Doctor> findByVaccination(){
 		 return doc.findAllVaccination();

@@ -45,6 +45,9 @@ const SuccessStories = () => {
     backgroundColor: '#e8f5e9', // Light green background for a refreshing feel
     textAlign: 'center',
     minHeight: '100vh', // Ensure the section takes full viewport height
+    backgroundImage: `url('/bgimage.png')`,
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
   };
 
   const contentContainerStyle = {
@@ -148,11 +151,11 @@ const SuccessStories = () => {
     <div style={containerStyle}>
       <div style={contentContainerStyle}>
         <h2 style={headingStyle}>Success Stories</h2>
-        <img
+        {/* <img
           src="/success.jpg" // Replace with your image URL
           alt="Success Stories"
           style={imageStyle}
-        />
+        /> */}
         <div style={storiesListStyle}>
           {stories.map((story, index) => (
             <div key={index} style={storyCardStyle}>

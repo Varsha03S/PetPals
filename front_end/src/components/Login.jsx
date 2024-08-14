@@ -49,7 +49,7 @@ function Login() {
       alignItems: 'center',
       justifyContent: 'center',
       minHeight: '100vh',
-      backgroundImage: `url('/brown-concrete-textured-wall.jpg')`,
+      backgroundImage: `url('/bgimage.png')`,
       backgroundSize: 'cover',
       backgroundPosition: 'center',
     },
@@ -66,7 +66,7 @@ function Login() {
       width: '80px',
       height: '80px',
       borderRadius: '50%',
-      marginBottom: '1rem',
+      marginBottom: '10px',
     },
     loginTitle: {
       fontSize: '2rem',

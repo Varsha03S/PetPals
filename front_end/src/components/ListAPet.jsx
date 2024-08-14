@@ -47,41 +47,45 @@ const ListAPet = () => {
   const containerStyle = {
     padding: '2rem',
     backgroundColor: '#f0f8ff',
-    minHeight: '100vh',
+    minHeight: '50vh',
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
-    maxWidth: '800px',
+    maxWidth: '100vw',
     margin: '0 auto',
     boxSizing: 'border-box',
   };
-
+  
   const formContainerStyle = {
     backgroundColor: '#fff',
     borderRadius: '8px',
     boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
     padding: '1.5rem',
     width: '100%',
-    marginBottom: '1.5rem',
+    maxWidth: '600px',
+    marginBottom: '2rem',
+    boxSizing: 'border-box',
   };
-
+  
   const inputStyle = {
     width: '100%',
     padding: '0.75rem',
     borderRadius: '4px',
     border: '1px solid #ddd',
     marginBottom: '0.75rem',
+    boxSizing: 'border-box',
   };
-
+  
   const textareaStyle = {
     width: '100%',
     padding: '0.75rem',
     borderRadius: '4px',
     border: '1px solid #ddd',
-    height: '150px',
     marginBottom: '0.75rem',
+    boxSizing: 'border-box',
+    minHeight: '150px',
   };
-
+  
   const buttonStyle = {
     padding: '0.75rem 1.5rem',
     border: 'none',
@@ -93,25 +97,25 @@ const ListAPet = () => {
     transition: 'background-color 0.3s',
     marginTop: '1rem',
   };
-
+  
   const buttonHoverStyle = {
     backgroundColor: 'grey',
   };
-
+  
   const listStyle = {
     listStyleType: 'none',
     padding: '0',
     margin: '0',
     width: '100%',
   };
-
+  
   const petItemStyle = {
     display: 'flex',
     alignItems: 'center',
     padding: '1rem',
     borderBottom: '1px solid #ddd',
   };
-
+  
   const petImageStyle = {
     width: '120px',
     height: '120px',
@@ -119,10 +123,11 @@ const ListAPet = () => {
     borderRadius: '4px',
     marginRight: '1rem',
   };
-
+  
   const petInfoStyle = {
     textAlign: 'left',
   };
+  
 
   return (
     <div style={containerStyle}>
@@ -182,7 +187,7 @@ const ListAPet = () => {
         </form>
       </div>
       <div>
-        <h2>Listed Pets:</h2>
+        <h2 style={{ textAlign: 'center' }}>Listed Pets:</h2>
         <ul style={listStyle}>
           {pets.map((pet) => (
             <li key={pet.id} style={petItemStyle}>

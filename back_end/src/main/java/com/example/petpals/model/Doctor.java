@@ -13,7 +13,7 @@ public class Doctor {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private String name;
-    private String specialty;
+    private String email;
     private String service;
     
 	public String getService() {
@@ -34,11 +34,12 @@ public class Doctor {
 	public void setName(String name) {
 		this.name = name;
 	}
-	public String getSpecialty() {
-		return specialty;
+	public String getEmail() {
+		return email;
 	}
-	public void setSpecialty(String specialty) {
-		this.specialty = specialty;
+	public void setEmail(String email) {
+		this.email = email;
 	}
+	
 
 }

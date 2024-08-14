@@ -7,7 +7,6 @@ const GeneralDiscussions = () => {
   const [submissions, setSubmissions] = useState([]);
 
   useEffect(() => {
-    // Fetch existing submissions when the component mounts
     axios.get('http://localhost:8080/general-discussions')
       .then(response => setSubmissions(response.data))
       .catch(error => console.error('Error fetching discussions:', error));
@@ -23,9 +22,7 @@ const GeneralDiscussions = () => {
 
     axios.post('http://localhost:8080/general-discussions', { name, message })
         .then(response => {
-            // Add the new submission to the list
             setSubmissions([...submissions, response.data]);
-            // Clear the form
             setName('');
             setMessage('');
         })
@@ -33,32 +30,30 @@ const GeneralDiscussions = () => {
             console.error('Error posting discussion:', error);
             alert('Failed to submit discussion. Please try again.');
         });
-};
-
+  };
 
   const styles = {
     pageContainer: {
-      backgroundColor: '#e0f7fa', // Light blue background for the entire page
-      minHeight: '100vh', // Full viewport height
+      backgroundColor: '#e0f7fa',
+      minHeight: '100vh',
       padding: '2rem',
       display: 'flex',
       justifyContent: 'center',
       alignItems: 'center',
+      boxSizing: 'border-box',
+      backgroundImage: `url('/bgimage.png')`,
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
     },
     formContainer: {
       maxWidth: '800px',
       width: '100%',
       padding: '2rem',
-      backgroundColor: '#f9f9f9', // Different background for the form container
+      backgroundColor: '#f9f9f9',
       borderRadius: '8px',
       boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
       textAlign: 'center',
-    },
-    headerImage: {
-      width: '100%',
-      height: 'auto',
-      borderRadius: '8px',
-      marginBottom: '1rem',
+      boxSizing: 'border-box',
     },
     input: {
       display: 'block',
@@ -68,6 +63,7 @@ const GeneralDiscussions = () => {
       border: '1px solid #ddd',
       borderRadius: '4px',
       fontSize: '1rem',
+      boxSizing: 'border-box',
     },
     textarea: {
       display: 'block',
@@ -78,6 +74,7 @@ const GeneralDiscussions = () => {
       borderRadius: '4px',
       fontSize: '1rem',
       minHeight: '150px',
+      boxSizing: 'border-box',
     },
     button: {
       padding: '0.8rem 1.5rem',
@@ -115,11 +112,6 @@ const GeneralDiscussions = () => {
     <div style={styles.pageContainer}>
       <div style={styles.formContainer}>
         <h2>General Discussions</h2>
-        <img 
-          src="https://www.aspca.org/sites/default/files/general-pet-care_facebook.jpg" 
-          alt="Pet Care" 
-          style={styles.headerImage} 
-        />
         <p>Share your experiences, ask questions, and discuss anything related to pet adoption and clinic services.</p>
         <form onSubmit={handleSubmit}>
           <input
